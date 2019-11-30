@@ -1,12 +1,5 @@
-import { actionTypes as bookInfoActionTypes } from './listReducer';
-import api from '../api';
+import { actionTypes as listActionTypes } from './listReducer';
 
-export const getList = bookId => async (dispatch, getState) => {
-  try {
-    const response = await api.bookGet({ book_id: bookId });
-    return response;
-  } catch (e) {
-    console.log(e);
-    throw e;
-  }
+export const deleteRow = (list) => async (dispatch, getState) => {
+  dispatch({ type: listActionTypes.setList, payload: list })
 };

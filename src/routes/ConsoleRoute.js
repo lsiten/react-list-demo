@@ -7,7 +7,7 @@ export default function ConsoleRoute() {
   const { path } = useRouteMatch();
   return (
     <Switch>
-      <Route path={`${path}/edit/:id`} component={Detail} />
+      <Route path={`${path}/detail/:name`} component={Detail} />
       <Route path={`${path}`} component={List} />
     </Switch>
   );
