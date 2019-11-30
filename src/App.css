@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  height: 100%;
+}
+
+.my-ant-input-number{
+  width: auto;
+}
+
+.ant-upload.ant-upload-select-picture-card{
+  width: 100%;
+}
+
+.ellipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
